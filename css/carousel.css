@@ -1,0 +1,268 @@
+
+.owl-carousel {
+  margin-bottom: 5em;
+}
+
+/* Owl Override Style */
+.owl-carousel .owl-controls,
+.owl-carousel-posts .owl-controls {
+  margin-top: 0;
+}
+
+.owl-carousel .owl-controls .owl-nav .owl-next,
+.owl-carousel .owl-controls .owl-nav .owl-prev,
+.owl-carousel-posts .owl-controls .owl-nav .owl-next,
+.owl-carousel-posts .owl-controls .owl-nav .owl-prev {
+  top: 50%;
+  margin-top: -29px;
+  z-index: 9999;
+  position: absolute;
+  -webkit-transition: 0.2s;
+  -o-transition: 0.2s;
+  transition: 0.2s;
+}
+
+.owl-carousel-posts .owl-controls .owl-nav .owl-next,
+.owl-carousel-posts .owl-controls .owl-nav .owl-prev {
+  top: 24%;
+}
+
+.owl-carousel .owl-controls .owl-nav .owl-next,
+.owl-carousel-posts .owl-controls .owl-nav .owl-next {
+  right: 40px;
+}
+.owl-carousel .owl-controls .owl-nav .owl-next:hover,
+.owl-carousel-posts .owl-controls .owl-nav .owl-next:hover {
+  margin-right: -10px;
+}
+
+.owl-carousel .owl-controls .owl-nav .owl-prev,
+.owl-carousel-posts .owl-controls .owl-nav .owl-prev {
+  left: 40px;
+}
+.owl-carousel .owl-controls .owl-nav .owl-prev:hover,
+.owl-carousel-posts .owl-controls .owl-nav .owl-prev:hover {
+  margin-left: -10px;
+}
+
+.owl-carousel-posts .owl-controls .owl-nav .owl-next {
+  right: -50px;
+}
+@media screen and (max-width: 768px) {
+  .owl-carousel-posts .owl-controls .owl-nav .owl-next {
+    right: 0px;
+  }
+}
+
+.owl-carousel-posts .owl-controls .owl-nav .owl-prev {
+  left: -50px;
+}
+@media screen and (max-width: 768px) {
+  .owl-carousel-posts .owl-controls .owl-nav .owl-prev {
+    left: 0px;
+  }
+}
+
+.owl-carousel-posts .owl-controls .owl-nav .owl-next i,
+.owl-carousel-posts .owl-controls .owl-nav .owl-prev i,
+.owl-carousel-fullwidth .owl-controls .owl-nav .owl-next i,
+.owl-carousel-fullwidth .owl-controls .owl-nav .owl-prev i {
+  color: #000;
+}
+.owl-carousel-posts .owl-controls .owl-nav .owl-next:hover i,
+.owl-carousel-posts .owl-controls .owl-nav .owl-prev:hover i,
+.owl-carousel-fullwidth .owl-controls .owl-nav .owl-next:hover i,
+.owl-carousel-fullwidth .owl-controls .owl-nav .owl-prev:hover i {
+  color: #000;
+}
+
+.owl-carousel-fullwidth.zero-light-arrow .owl-controls .owl-nav .owl-next i,
+.owl-carousel-fullwidth.zero-light-arrow .owl-controls .owl-nav .owl-prev i {
+  font-size: 50px;
+  color: #fff;
+}
+.owl-carousel-fullwidth.zero-light-arrow .owl-controls .owl-nav .owl-next:hover i,
+.owl-carousel-fullwidth.zero-light-arrow .owl-controls .owl-nav .owl-prev:hover i {
+  color: #fff;
+}
+
+.owl-carousel .owl-controls .owl-nav .owl-next i,
+.owl-carousel .owl-controls .owl-nav .owl-prev i {
+  font-size: 50px;
+  color: rgba(0, 0, 0, 0.3);
+}
+.owl-carousel .owl-controls .owl-nav .owl-next:hover i,
+.owl-carousel .owl-controls .owl-nav .owl-prev:hover i {
+  color: rgba(0, 0, 0, 0.6);
+}
+
+.owl-carousel .owl-controls .owl-nav .owl-next:hover {
+  margin-right: -10px;
+}
+
+.owl-carousel .owl-controls .owl-nav .owl-prev:hover {
+  margin-left: -10px;
+}
+
+.owl-carousel .owl-dots {
+  display: none !important;
+}
+@media screen and (max-width: 992px) {
+  .owl-carousel .owl-dots {
+    display: block !important;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .owl-theme .owl-controls .owl-nav {
+    display: none;
+  }
+}
+
+.owl-theme .owl-controls .owl-nav [class*="owl-"] {
+  background: none !important;
+}
+.owl-theme .owl-controls .owl-nav [class*="owl-"] i {
+  font-size: 30px;
+}
+.owl-theme .owl-controls .owl-nav [class*="owl-"] i:hover, .owl-theme .owl-controls .owl-nav [class*="owl-"] i:focus {
+  background: none !important;
+}
+.owl-theme .owl-controls .owl-nav [class*="owl-"]:hover, .owl-theme .owl-controls .owl-nav [class*="owl-"]:focus {
+  background: none !important;
+}
+
+.owl-theme .owl-dots {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+}
+
+.owl-carousel-fullwidth.owl-theme .owl-dots {
+  bottom: 0;
+  margin-bottom: 40px;
+}
+
+.owl-theme .owl-dots .owl-dot span {
+  width: 10px;
+  height: 10px;
+  background: rgba(255, 255, 255, 0.3);
+  -webkit-transition: 0.2s;
+  -o-transition: 0.2s;
+  transition: 0.2s;
+  border: 2px solid transparent;
+}
+.owl-theme .owl-dots .owl-dot span:hover {
+  background: none;
+}
+
+.owl-theme .owl-dots .owl-dot.active span, .owl-theme .owl-dots .owl-dot:hover span {
+  background: #fff;
+}
+
+.item {
+  position: relative;
+}
+.item .pop-up-overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(240, 56, 97, 0.8);
+  opacity: 0;
+  -webkit-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s;
+}
+.item .pop-up-overlay.pop-up-overlay-color-2 {
+  background: rgba(248, 125, 9, 0.8) !important;
+}
+.item .pop-up-overlay.pop-up-overlay-color-3 {
+ background:  rgba(20, 191, 136, 0.8) !important;
+}
+.item .pop-up-overlay.pop-up-overlay-color-4 {
+  background: rgba(222, 177, 15, 0.81) !important;
+}
+.item .pop-up-overlay .desc {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  margin-top: -60px;
+  padding: 30px;
+}
+.item .pop-up-overlay .desc h3 {
+  color: rgba(255, 255, 255, 0.9);
+  margin-bottom: 10px;
+}
+.item .pop-up-overlay .desc span {
+  display: block;
+  color: rgba(255, 255, 255, 0.6);
+}
+.item .pop-up-overlay:hover, .item .pop-up-overlay:focus {
+  text-decoration: none;
+}
+.item:hover .pop-up-overlay, .item:focus .pop-up-overlay {
+  opacity: 1;
+}
+
+.services-num {
+  position: relative;
+}
+.services-num .number-holder {
+  position: absolute;
+  font-size: 100px;
+  font-weight: 700;
+  top: 0;
+  left: 15px;
+  line-height: 100px;
+  color: #000;
+}
+.services-num .desc {
+  padding-left: 140px;
+}
+.services-num .desc h3 {
+  font-weight: 300;
+  line-height: 26px;
+  font-size: 24px;
+  margin-bottom: 8px;
+}
+.services-num.services-num-text-right {
+  text-align: right;
+}
+.services-num.services-num-text-right .number-holder {
+  right: 15px;
+}
+.services-num.services-num-text-right .desc {
+  padding-left: 0;
+  padding-right: 140px;
+}
+@media screen and (max-width: 768px) {
+  .services-num.services-num-text-right {
+    text-align: left;
+  }
+  .services-num.services-num-text-right .number-holder {
+    right: 0;
+    left: 15px;
+  }
+  .services-num.services-num-text-right .desc {
+    padding-left: 140px;
+    padding-right: 0;
+  }
+}
+@media screen and (max-width: 480px) {
+  .services-num.services-num-text-right .desc {
+    padding-left: 80px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .services-num .number-holder {
+    font-size: 50px;
+  }
+  .services-num .desc {
+    padding-left: 80px;
+  }
+}
